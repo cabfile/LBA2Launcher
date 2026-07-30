@@ -29,8 +29,8 @@ namespace LBA2Launcher {
 				button3.Image = ExtractIcon(Environment.GetFolderPath(Environment.SpecialFolder.Windows) + "\\system32\\imageres.dll", 3);
 			}
 			if(File.Exists("nw.exe") && !File.Exists("lba2.exe")) whichOne = "nw.exe";
-			if(File.Exists("LBA2AutoUpdate.exe")) button2.Visible = true;
-			config = new Ini("LBA2Launcher.ini");
+			if(File.Exists("AutoUpdate.exe")) button2.Visible = true;
+			config = new Ini("Launcher.ini");
 			if(config.GetValue("VSync", "Settings") == "false") checkBox1.Checked = false;
 			if(config.GetValue("ForceCanvas2D", "Settings") == "true") checkBox2.Checked = true;
 			if(config.GetValue("NeverSuspend", "Settings") == "true") checkBox3.Checked = true;
