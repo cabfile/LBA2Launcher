@@ -70,7 +70,7 @@ namespace LBA2Launcher {
 		}
 
 		private void button2_Click(object sender, EventArgs e) {
-			Process.Start("LBA2AutoUpdate.exe");
+			Process.Start("AutoUpdate.exe");
 		}
 
 		private void Form1_Activated(object sender, EventArgs e) {
